@@ -117,6 +117,11 @@ main {
     font-weight: 600;
 }
 
+.fa-arrow-right {
+    margin-left: 8px;
+    color: #fa2e3f;
+}
+
 .experience {
     display: flex;
     justify-content: center;
@@ -293,4 +298,109 @@ footer {
     list-style: none;
     font-size: 30px;
     gap: 60px;
+}
+
+/* media query */
+
+@media screen and (max-width:500px) {
+    .logo img {
+        width: 100px;
+    }
+
+    .nav-item {
+        display: none;
+    }
+    
+    main {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        height: 132vh;
+    }
+
+    .main-image img {
+        width: 478px;
+        margin-left: -100px;
+    }
+
+    .main-content {
+        width: 378px;
+        margin-left: 48px;
+    }
+
+    .work {
+        background: none;
+    }
+
+    .works-cards {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .card {
+        width: 378px;
+    }
+
+    .experience {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .years {
+        margin-left: 176px;
+    }
+
+    .heading {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 24px;
+    }
+
+    .heading .left {
+        width: 378px;
+    }
+
+    .project-cards {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .project-cards .project-card {
+        width: 378px;
+    }
+
+    .image img {
+        width: 318px;
+    }
+
+    .contacts {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 24px;
+    }
+
+    .contacts .contact-content {
+        width: 378px;
+        padding: 0px 32px;
+    }
+
+    .contacts .contact-content h1 {
+        font-size: 24px;
+    }
+
+    .contacts .contact-content p {
+        font-size: 14px;
+    }
+
+    .contact .contact-button a {
+        font-size: 16px;
+    }
+
+    footer .socials {
+        margin-left: 148px;
+    }
 }
